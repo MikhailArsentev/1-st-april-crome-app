@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "1-st april",
+    "version":"1.0",
+    "icons": {
+        "16": "images/icon@16x16.png",
+        "48": "images/icon@48x48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://vk.com/*"],
+            "js": ["scripts.js"]
+        }
+    ],
+    "permissions": ["https://vk.com/*"]
+}
